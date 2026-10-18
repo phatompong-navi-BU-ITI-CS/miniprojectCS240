@@ -9,11 +9,10 @@ const fields = [...form.querySelectorAll("input, select, textarea")];
 
 
 const messages = {
-  username: "Username must be 5-12 characters.",
-  password: "Password must be 6-16 characters.",
   firstName: "Please enter your first name.(Alphabet only)",
   lastName: "Please enter your last name.(Alphabet only)",
   email: "Please enter a valid email address.",
+  phone: "Phone number must contain exactly 10 digits.",
   address: "Please enter your address.",
   country: "Please choose your country.",
   zip: "ZIP code must contain exactly 5 digits.",
@@ -24,21 +23,13 @@ function getErrorElement(field) {
 }
 
 
-function showError(field) {
-  const errorElement = getErrorElement(field);
+function showError() {
+  const popup = document.getElementById('error-popup');
+  popup.classList.remove('hidden');
 
-
-  if (!errorElement) return;
-
-
-  const message = messages[field.name] || "Please complete this field.";
-
-
-  errorElement.textContent = field.validity.valid ? "" : message;
-
-
-  field.toggleAttribute("aria-invalid", !field.validity.valid);
-  field.closest(".field")?.classList.toggle("has-error", !field.validity.valid);
+  setTimeout(() => {
+    popup.classList.add('hidden');
+  }, 4000);
 }
 
 

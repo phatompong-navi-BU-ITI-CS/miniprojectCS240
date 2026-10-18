@@ -19,7 +19,7 @@
     <nav class="navbar bg-primary text-primary-content px-6">
 
         <div class="flex-1">
-            <a class="btn btn-ghost text-xl">FarmHome co.</a>
+            <a href="index.html" class="text-xl font-extrabold tracking-tight sm:text-2xl">FarmHome co.</a>
         </div>
 
         <div class="dropdown dropdown-end lg:hidden">
@@ -94,23 +94,23 @@
                     </div>
 
                     <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                        <article class="card border border-base-300 bg-base-200 shadow-lg transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-xl">
+                        <article class="card border border-base-300 bg-base-200 shadow-lg transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-x3 hover:shadow-rose-800">
                             <div class="card-body items-center text-center">
-                                <div class="grid size-16 place-items-center rounded-full bg-primary/10 text-4xl">🌾</div>
+                                <div class="grid size-16 place-items-center rounded-full bg-red-800 bg-primary/10 text-white text-4xl">⸙</div>
                                 <h3 class="card-title mt-3">Quality Ingredients</h3>
                                 <p class="opacity-80">We choose quality ingredients to make every loaf and pastry taste its very best.</p>
                             </div>
                         </article>
-                        <article class="card border border-base-300 bg-base-200 shadow-lg transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-xl">
+                        <article class="card border border-base-300 bg-base-200 shadow-lg transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-x3 hover:shadow-rose-800">
                             <div class="card-body items-center text-center">
-                                <div class="grid size-16 place-items-center rounded-full bg-primary/10 text-4xl">🥖</div>
+                                <div class="grid size-16 place-items-center rounded-full bg-red-800 bg-primary/10 text-white text-4xl">♨</div>
                                 <h3 class="card-title mt-3">Baked Fresh Daily</h3>
                                 <p class="opacity-80">From crusty artisan bread to soft pastries, our bakery is filled with fresh-baked goodness.</p>
                             </div>
                         </article>
-                        <article class="card border border-base-300 bg-base-200 shadow-lg transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-xl">
+                        <article class="card border border-base-300 bg-base-200 shadow-lg transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-x3 hover:shadow-rose-800">
                             <div class="card-body items-center text-center">
-                                <div class="grid size-16 place-items-center rounded-full bg-primary/10 text-4xl">🤎</div>
+                                <div class="grid size-16 place-items-center rounded-full bg-red-800 bg-primary/10 text-white text-4xl">❤︎</div>
                                 <h3 class="card-title mt-3">Made with Love</h3>
                                 <p class="opacity-80">We believe the best treats are the ones made thoughtfully and shared with people you love.</p>
                             </div>
@@ -119,74 +119,94 @@
                 </div>
         </section>
 
-            <div id="careersSection" class="block p-5">
+        <section id="careersSection" class="bg-base-100 px-5 py-16 md:px-10">
+            <div class="mx-auto max-w-7xl">
+                <div class="mb-10 text-center">
+                    <p class="font-semibold uppercase tracking-[0.25em] text-primary">Join Our Team</p>
+                    <h2 class="mt-3 text-3xl font-bold md:text-4xl">Careers at FarmHome Bakery</h2>
+                    <p class="mx-auto mt-4 max-w-2xl opacity-75">
+                        Explore our opportunities and find your place on our team.
+                    </p>
+                </div>
 
-                <h1 class="text-3xl font-bold mb-4">
-                    Careers at FarmHome Bakery
-                </h1>
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    <article class="card border border-base-300 bg-base-200 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                        <figure class="px-6 pt-6">
+                            <img src="https://c7589db6ae.mjedge.net/wp-content/uploads/2022/10/Bakery-Chef-.jpg"
+                                 alt="Bakery chef preparing fresh bread"
+                                 class="rounded-full max-w-80 max-h-60">
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h3 class="card-title">Bakery Chef</h3>
+                            <p class="opacity-80">Help prepare fresh bread, pastries, and other bakery products.</p>
+                            <div class="card-actions mt-4 w-full">
+                                <button type="button" class="btn btn-primary w-full"
+                                        onclick="openJob('chef')">View Job Details</button>
+                            </div>
+                        </div>
+                    </article>
 
-                <p class="mb-6">
-                    Explore our opportunities and find your place on our team.
-                </p>
+                    <article class="card border border-base-300 bg-base-200 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                        <figure class="px-6 pt-6">
+                            <img src="https://thumbs.dreamstime.com/b/portrait-black-barista-male-portrait-black-barista-male-man-pouring-coffee-restaurant-116270972.jpg"
+                                 alt="Barista preparing coffee"
+                                 class="rounded-full max-w-80 max-h-60">
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h3 class="card-title">Barista</h3>
+                            <p class="opacity-80">Prepare coffee and drinks while providing friendly customer service.</p>
+                            <div class="card-actions mt-4 w-full">
+                                <button type="button" class="btn btn-primary w-full"
+                                        onclick="openJob('barista')">View Job Details</button>
+                            </div>
+                        </div>
+                    </article>
 
-                <article class="border rounded-lg p-5 mb-4">
-                    <h2 class="text-xl font-semibold mb-2">Bakery Chef</h2>
-                    <p class="mb-4">Help prepare fresh bread, pastries, and other bakery products.</p>
-                    <button type="button"
-                        class="bg-amber-700 text-white px-5 py-2 rounded-lg"
-                        onclick="openJob('chef')">
-                        View Job Details
-                    </button>
-                </article>
-
-                <article class="border rounded-lg p-5 mb-4">
-                    <h2 class="text-xl font-semibold mb-2">Barista</h2>
-                    <p class="mb-4">Prepare coffee and drinks while providing friendly customer service.</p>
-                    <button type="button"
-                        class="bg-amber-700 text-white px-5 py-2 rounded-lg"
-                        onclick="openJob('barista')">
-                        View Job Details
-                    </button>
-                </article>
-
-                <article class="border rounded-lg p-5 mb-4">
-                    <h2 class="text-xl font-semibold mb-2">Sales Assistant</h2>
-                    <p class="mb-4">Help customers, display bakery products, and support daily sales.</p>
-                    <button type="button"
-                        class="bg-amber-700 text-white px-5 py-2 rounded-lg"
-                        onclick="openJob('sales')">
-                        View Job Details
-                    </button>
-                </article>
-
+                    <article class="card border border-base-300 bg-base-200 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                        <figure class="px-6 pt-6">
+                            <img src="https://cdn.i-scmp.com/sites/default/files/styles/768x768/public/d8/images/canvas/2022/09/28/05cf2573-e641-4a29-9688-938ddc469a59_ab03d547.jpg?itok=fjZWgUpp&v=1664356265"
+                                 alt="Sales assistant helping customers"
+                                 class="rounded-full max-w-80 max-h-60">
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h3 class="card-title">Sales Assistant</h3>
+                            <p class="opacity-80">Help customers, display bakery products, and support daily sales.</p>
+                            <div class="card-actions mt-4 w-full">
+                                <button type="button" class="btn btn-primary w-full"
+                                        onclick="openJob('sales')">View Job Details</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
+        </section>
         <section id="about" class="p-10 bg-base-200">
 
             <div class="text-center mb-8">
-                <h2 class="text-4xl font-bold">อะbout มี</h2>
-                <p>here's my introduction.</p>
+                <h2 class="text-rose-800 text-4xl font-bold ">Our Courses</h2>
+                <p>Here's our courses introduction.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-6">
 
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-x3 hover:shadow-rose-800">
                     <div class="card-body">
-                        <h3 class="card-title">Why do I love cat?</h3>
-                        <p>Because they're so cute and will take control of the world.</p>
+                        <h3 class="card-title hover:text-rose-800">Bakery Course</h3>
+                        <p>Teaching you how to be a bakery chef from the beginning.</p>
                     </div>
                 </div>
 
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-x3 hover:shadow-rose-800">
                     <div class="card-body">
-                        <h3 class="card-title">My career dream?</h3>
-                        <p>Anything that I can make enough money and have time with 10 cats everydays.</p>
+                        <h3 class="card-title hover:text-rose-800">Barista Course</h3>
+                        <p>Teaching you how to be a barista from the beginning.</p>
                     </div>
                 </div>
 
-                <div class="card bg-base-100 shadow-xl">
+                <div class="card bg-base-100 shadow-xl transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-x3 hover:shadow-rose-800">
                     <div class="card-body">
-                        <h3 class="card-title">Why did I pick Computer Science?</h3>
-                        <p>Coding is actually fun when you can understand it.</p>
+                        <h3 class="card-title hover:text-rose-800">Marketing Course</h3>
+                        <p>Learn about marketing in the bakery market.,</p>
                     </div>
                 </div>
             </div>
@@ -200,10 +220,10 @@
                         <p class="mt-4 max-w-xl leading-7 opacity-90">Contact Farmhome Bakery for product questions, custom cake enquiries, or your next sweet treat.</p>
                     </div>
                     <div class="rounded-2xl bg-base-100 p-6 text-base-content shadow-xl">
-                        <h3 class="text-xl font-bold">Contact Farmhome</h3>
-                        <p class="mt-3">✉️ Email: phatompong.navi@bumail.net, burussakon.tong@bumail.net</p>
-                        <p class="mt-2">☎️ Phone: 095-553-3606,  093-640-1777</p>
-                        <p class="mt-2">📍 Visit us: Your neighbourhood bakery</p>
+                        <h3 class="text-xl font-bold text-rose-800">Contact Farmhome</h3>
+                        <p class="mt-3"><span class="text-rose-800">✉ Email:</span> phatompong.navi@bumail.net, burussakon.tong@bumail.net</p>
+                        <p class="mt-2"><span class="text-rose-800">☏ Phone:</span> 095-553-3606,  093-640-1777</p>
+                        <p class="mt-2"><span class="text-rose-800">➤ Visit us:</span> Your neighbourhood bakery</p>
                         <p class="mt-4 text-sm opacity-60">Replace these sample contact details with your real business information.</p>
                     </div>
                 </div>
@@ -213,7 +233,7 @@
         <div id="detailsPage" class="hidden p-5">
 
                 <button type="button"
-                    class="text-amber-800 underline mb-6"
+                    class="text-red-800 underline mb-6"
                     onclick="showPage('homePage')">
                     ← Back to Jobs
                 </button>
@@ -231,7 +251,7 @@
                         <li>Follow recipes and food safety procedures.</li>
                     </ul>
                     <button type="button"
-                        class="bg-amber-700 text-white px-5 py-2 rounded-lg"
+                        class="bg-red-800 text-white px-5 py-2 rounded-lg"
                         onclick="openForm('Bakery Chef')">
                         Apply for this Job
                     </button>
@@ -250,7 +270,7 @@
                         <li>Keep the beverage station clean and stocked.</li>
                     </ul>
                     <button type="button"
-                        class="bg-amber-700 text-white px-5 py-2 rounded-lg"
+                        class="bg-red-800 text-white px-5 py-2 rounded-lg"
                         onclick="openForm('Barista')">
                         Apply for this Job
                     </button>
@@ -269,7 +289,7 @@
                         <li>Assist with sales and checkout tasks.</li>
                     </ul>
                     <button type="button"
-                        class="bg-amber-700 text-white px-5 py-2 rounded-lg"
+                        class="bg-red-800 text-white px-5 py-2 rounded-lg"
                         onclick="openForm('Sales Assistant')">
                         Apply for this Job
                     </button>
@@ -277,18 +297,15 @@
 
             </div>
 
-            
-            <!-- Application Form Section -->
             <section id="resForm"
                 class="hidden bg-stone-100 px-4 py-12 sm:px-6 lg:px-8">
 
                 <div class="mx-auto max-w-3xl">
 
-                    <!-- Form Heading -->
                     <div class="mb-8 text-center">
                         <span class="mb-3 inline-block rounded-full bg-rose-100 px-4 py-1.5
                                     text-sm font-semibold text-rose-800">
-                            🥐 JOIN OUR TEAM
+                             JOIN OUR TEAM
                         </span>
 
                         <h2 class="text-3xl font-bold tracking-tight text-rose-900 sm:text-4xl">
@@ -300,7 +317,7 @@
                         </p>
                     </div>
 
-                    <!-- Form Card -->
+
                     <form id="registration-form"
                         class="space-y-8 rounded-2xl border border-stone-200 bg-white
                             p-5 shadow-xl shadow-stone-900/5 sm:p-8 lg:p-10"
@@ -308,57 +325,8 @@
 
                         <input type="hidden" id="selected-job" name="job">
 
-                        <!-- Section: Account Details -->
-                        <div>
-                            <h3 class="mb-1 text-xl font-bold text-stone-800">
-                                Account Details
-                            </h3>
-                            <p class="mb-5 text-sm text-stone-500">
-                                Create your application account.
-                            </p>
-
-                            <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
-
-                                <div>
-                                    <label for="username"
-                                        class="mb-2 block text-sm font-semibold text-stone-700">
-                                        Username <span class="text-rose-700">*</span>
-                                    </label>
-                                    <input type="text" id="username" name="username"
-                                        autocomplete="username" minlength="5" maxlength="12"
-                                        required
-                                        placeholder="Choose a username"
-                                        class="w-full rounded-xl border border-stone-300 bg-stone-50
-                                            px-4 py-3 text-stone-800 outline-none transition
-                                            placeholder:text-stone-400
-                                            focus:border-rose-700 focus:bg-white
-                                            focus:ring-4 focus:ring-rose-700/10">
-                                    <p class="mt-1 text-sm text-rose-700" id="username-error"></p>
-                                </div>
-
-                                <div>
-                                    <label for="password"
-                                        class="mb-2 block text-sm font-semibold text-stone-700">
-                                        Password <span class="text-rose-700">*</span>
-                                    </label>
-                                    <input type="password" id="password" name="password"
-                                        autocomplete="new-password" minlength="6" maxlength="16"
-                                        required
-                                        placeholder="Create a password"
-                                        class="w-full rounded-xl border border-stone-300 bg-stone-50
-                                            px-4 py-3 text-stone-800 outline-none transition
-                                            placeholder:text-stone-400
-                                            focus:border-rose-700 focus:bg-white
-                                            focus:ring-4 focus:ring-rose-700/10">
-                                    <p class="mt-1 text-sm text-rose-700" id="password-error"></p>
-                                </div>
-
-                            </div>
-                        </div>
-
                         <div class="h-px bg-stone-200"></div>
 
-                        <!-- Section: Personal Information -->
                         <div>
                             <h3 class="mb-1 text-xl font-bold text-stone-800">
                                 Personal Information
@@ -399,6 +367,22 @@
                                             focus:border-rose-700 focus:bg-white
                                             focus:ring-4 focus:ring-rose-700/10">
                                     <p class="mt-1 text-sm text-rose-700" id="last-name-error"></p>
+                                </div>
+
+                                <div>
+                                    <label for="phone"
+                                        class="mb-2 block text-sm font-semibold text-stone-700">
+                                        Phone Number <span class="text-rose-700">*</span>
+                                    </label>
+                                    <input type="text" id="phone" name="phone"
+                                        inputmode="numeric" pattern="[0-9]{10}" maxlength="10"
+                                        required placeholder="0987654321"
+                                        class="w-full rounded-xl border border-stone-300 bg-stone-50
+                                            px-4 py-3 text-stone-800 outline-none transition
+                                            placeholder:text-stone-400
+                                            focus:border-rose-700 focus:bg-white
+                                            focus:ring-4 focus:ring-rose-700/10">
+                                    <p class="mt-1 text-sm text-rose-700" id="phone-error"></p>
                                 </div>
 
                                 <div class="sm:col-span-2">
@@ -469,11 +453,18 @@
                                 </div>
 
                             </div>
+                                <div id="error-popup" class="hidden fixed inset-0 z-50 items-center flex justify-content-center bg-black/50">
+                                    <div class="bg-red-800 text-white p-8 rounded-xl shadow-2xl max-w-md w-full mx-4 flex flex-col items-center text-center gap-4 animate-in fade-in zoom-in-95 duration-200">
+                                        <!-- Optional: Add a large warning icon or header here -->
+                                        <h3 class="text-xl font-bold">An Error Occurred</h3>
+                                        <p class="text-red-100">Please complete your form and follow the requirement.</p>
+                                        <button onclick="document.getElementById('error-popup').classList.add('hidden')" class="mt-2 bg-white text-red-800 hover:bg-red-100 font-semibold px-6 py-2 rounded-lg transition-colors">Dismiss</button>
+                                    </div>
+                                </div>
                         </div>
 
                         <div class="h-px bg-stone-200"></div>
 
-                        <!-- Section: Preferences -->
                         <div>
                             <h3 class="mb-5 text-xl font-bold text-stone-800">
                                 A Little More About You
@@ -550,7 +541,6 @@
                             </div>
                         </div>
 
-                        <!-- Submit -->
                         <div class="border-t border-stone-200 pt-6">
                             <p class="mb-4 text-sm text-stone-500">
                                 <span class="text-rose-700">*</span> Required fields
@@ -604,7 +594,7 @@
 
     <footer class="footer footer-center bg-base-100 p-8 text-base-content">
         <div>
-            <a href="#home" class="text-2xl font-bold text-primary">🥐 Farmhome Bakery</a>
+            <a href="#home" class="text-2xl font-bold text-primary">Farmhome Bakery</a>
             <p>Freshly baked with love, every day.</p>
             <p class="text-sm opacity-60">© 2026 Farmhome Bakery. All rights reserved.</p>
         </div>
