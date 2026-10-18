@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miniproject</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body data-theme="autumn" style="font-family: 'Changa One';">
+    <nav class="navbar bg-primary text-primary-content px-6">
+
+        <div class="flex-1">
+            <a class="btn btn-ghost text-xl">FarmHome co.</a>
+        </div>
+
+        <div class="dropdown dropdown-end lg:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost">
+                ☰
+            </div>
+
+            <ul tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 text-base-content rounded-box z-10 mt-3 w-52 p-2 shadow">
+
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Courses</a></li>
+                <li><a href="#gallery">About Us</a></li>
+
+            </ul>
+        </div>
+
+        <div class="hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Courses</a></li>
+                <li><a href="#gallery">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        function toggleShortenMenu(){
+            document.getElementById("menu")
+                    .classList.toggle("show");
+        }
+        </script>
+
+    <section id="about" class="p-10 bg-base-200">
+
+        <div class="text-center mb-8">
+            <h2 class="text-4xl font-bold">อะbout มี</h2>
+            <p>here's my introduction.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+
+            <div class="card bg-base-100 shadow-xl">
+                <div class="card-body">
+                    <h3 class="card-title">Why do I love cat?</h3>
+                    <p>Because they're so cute and will take control of the world.</p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl">
+                <div class="card-body">
+                    <h3 class="card-title">My career dream?</h3>
+                    <p>Anything that I can make enough money and have time with 10 cats everydays.</p>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl">
+                <div class="card-body">
+                    <h3 class="card-title">Why did I pick Computer Science?</h3>
+                    <p>Coding is actually fun when you can understand it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -9,8 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
@@ -31,8 +31,8 @@
                 class="menu menu-sm dropdown-content bg-base-100 text-base-content rounded-box z-10 mt-3 w-52 p-2 shadow">
 
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">Courses</a></li>
-                <li><a href="#gallery">About Us</a></li>
+                <li><a href="./extra/about.html">Courses</a></li>
+                <li><a href="about.html">About Us</a></li>
 
             </ul>
         </div>
@@ -40,8 +40,8 @@
         <div class="hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">Courses</a></li>
-                <li><a href="#gallery">About Us</a></li>
+                <li><a href="./extra/about.html">Courses</a></li>
+                <li><a href="about.html">About Us</a></li>
             </ul>
         </div>
     </nav>
@@ -53,263 +53,561 @@
         }
         </script>
 
-    <section id="home" class="hero min-h-[70vh] bg-base-200">
+    <div id="homePage" class="page">
+        <section id="home" class="hero min-h-[72vh] bg-base-200">
+            <div class="hero-content grid w-full max-w-7xl gap-10 py-12 lg:grid-cols-2 lg:gap-16 lg:py-20">
+                <div class="order-2 text-center lg:order-1 lg:text-left">
+                    <div class="badge badge-outline mb-5 border-primary px-4 py-3 text-primary">FRESH FROM OUR OVEN</div>
+                    <h1 class="text-4xl font-bold leading-tight tracking-tight md:text-6xl">
+                        A little piece of <span class="text-primary">happiness</span> in every bite.
+                    </h1>
+                    <p class="mx-auto mt-6 max-w-xl text-lg leading-8 opacity-80 lg:mx-0">
+                        Welcome to Farmhome Bakery, where handmade breads, buttery pastries, and sweet treats are baked fresh with care every day.
+                    </p>
+                    <div class="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start">
+                        <a href="#products" class="btn btn-primary rounded-full px-7 text-primary-content">Explore Our Bakery</a>
+                        <a href="#about" class="btn btn-outline rounded-full px-7">Our Story</a>
+                    </div>
+                    <div class="mt-8 flex flex-wrap justify-center gap-6 text-sm lg:justify-start">
+                        <span>✓ Freshly baked daily</span>
+                        <span>✓ Quality ingredients</span>
+                        <span>✓ Made with love</span>
+                    </div>
+                </div>    
 
-        <div class="hero-content text-center">
-            <div>
-                <h1 class="text-5xl font-bold">Welcome to FarmHome co.</h1>
-                <p class="py-6"></p>
-                <button class="btn btn-primary">About us</button>
+                <div class="order-1 flex items-center justify-center lg:order-2">
+                    <img
+                        src="https://www.freepnglogos.com/uploads/bread-png/download-bread-clipart-png-image-pngimg-9.png"
+                        alt="Fresh artisan bread"
+                        class="h-auto w-full max-w-3xl object-contain"
+                    >
+                </div>
             </div>
+        </section>
+
+        <section class="bg-base-100 px-5 py-16 md:px-10">
+                <div class="mx-auto max-w-7xl">
+                    <div class="mb-10 text-center">
+                        <p class="font-semibold uppercase tracking-[0.25em] text-primary">The Farmhome Promise</p>
+                        <h2 class="mt-3 text-3xl font-bold md:text-4xl">Good things are made with care.</h2>
+                        <p class="mx-auto mt-4 max-w-2xl opacity-75">Simple ingredients, thoughtful baking, and a warm welcome in every visit.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                        <article class="card border border-base-300 bg-base-200 shadow-lg transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-xl">
+                            <div class="card-body items-center text-center">
+                                <div class="grid size-16 place-items-center rounded-full bg-primary/10 text-4xl">🌾</div>
+                                <h3 class="card-title mt-3">Quality Ingredients</h3>
+                                <p class="opacity-80">We choose quality ingredients to make every loaf and pastry taste its very best.</p>
+                            </div>
+                        </article>
+                        <article class="card border border-base-300 bg-base-200 shadow-lg transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-xl">
+                            <div class="card-body items-center text-center">
+                                <div class="grid size-16 place-items-center rounded-full bg-primary/10 text-4xl">🥖</div>
+                                <h3 class="card-title mt-3">Baked Fresh Daily</h3>
+                                <p class="opacity-80">From crusty artisan bread to soft pastries, our bakery is filled with fresh-baked goodness.</p>
+                            </div>
+                        </article>
+                        <article class="card border border-base-300 bg-base-200 shadow-lg transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-xl">
+                            <div class="card-body items-center text-center">
+                                <div class="grid size-16 place-items-center rounded-full bg-primary/10 text-4xl">🤎</div>
+                                <h3 class="card-title mt-3">Made with Love</h3>
+                                <p class="opacity-80">We believe the best treats are the ones made thoughtfully and shared with people you love.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+        </section>
+
+            <div id="careersSection" class="block p-5">
+
+                <h1 class="text-3xl font-bold mb-4">
+                    Careers at FarmHome Bakery
+                </h1>
+
+                <p class="mb-6">
+                    Explore our opportunities and find your place on our team.
+                </p>
+
+                <article class="border rounded-lg p-5 mb-4">
+                    <h2 class="text-xl font-semibold mb-2">Bakery Chef</h2>
+                    <p class="mb-4">Help prepare fresh bread, pastries, and other bakery products.</p>
+                    <button type="button"
+                        class="bg-amber-700 text-white px-5 py-2 rounded-lg"
+                        onclick="openJob('chef')">
+                        View Job Details
+                    </button>
+                </article>
+
+                <article class="border rounded-lg p-5 mb-4">
+                    <h2 class="text-xl font-semibold mb-2">Barista</h2>
+                    <p class="mb-4">Prepare coffee and drinks while providing friendly customer service.</p>
+                    <button type="button"
+                        class="bg-amber-700 text-white px-5 py-2 rounded-lg"
+                        onclick="openJob('barista')">
+                        View Job Details
+                    </button>
+                </article>
+
+                <article class="border rounded-lg p-5 mb-4">
+                    <h2 class="text-xl font-semibold mb-2">Sales Assistant</h2>
+                    <p class="mb-4">Help customers, display bakery products, and support daily sales.</p>
+                    <button type="button"
+                        class="bg-amber-700 text-white px-5 py-2 rounded-lg"
+                        onclick="openJob('sales')">
+                        View Job Details
+                    </button>
+                </article>
+
+            </div>
+        <section id="about" class="p-10 bg-base-200">
+
+            <div class="text-center mb-8">
+                <h2 class="text-4xl font-bold">อะbout มี</h2>
+                <p>here's my introduction.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <div class="card bg-base-100 shadow-xl">
+                    <div class="card-body">
+                        <h3 class="card-title">Why do I love cat?</h3>
+                        <p>Because they're so cute and will take control of the world.</p>
+                    </div>
+                </div>
+
+                <div class="card bg-base-100 shadow-xl">
+                    <div class="card-body">
+                        <h3 class="card-title">My career dream?</h3>
+                        <p>Anything that I can make enough money and have time with 10 cats everydays.</p>
+                    </div>
+                </div>
+
+                <div class="card bg-base-100 shadow-xl">
+                    <div class="card-body">
+                        <h3 class="card-title">Why did I pick Computer Science?</h3>
+                        <p>Coding is actually fun when you can understand it.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-primary px-5 py-16 text-primary-content md:px-10">
+                <div class="mx-auto grid max-w-7xl gap-10 md:grid-cols-2 md:items-center">
+                    <div>
+                        <p class="font-semibold uppercase tracking-[0.25em]">Let's make something delicious</p>
+                        <h2 class="mt-3 text-3xl font-bold md:text-4xl">Have a celebration or craving?</h2>
+                        <p class="mt-4 max-w-xl leading-7 opacity-90">Contact Farmhome Bakery for product questions, custom cake enquiries, or your next sweet treat.</p>
+                    </div>
+                    <div class="rounded-2xl bg-base-100 p-6 text-base-content shadow-xl">
+                        <h3 class="text-xl font-bold">Contact Farmhome</h3>
+                        <p class="mt-3">✉️ Email: phatompong.navi@bumail.net, burussakon.tong@bumail.net</p>
+                        <p class="mt-2">☎️ Phone: 095-553-3606,  093-640-1777</p>
+                        <p class="mt-2">📍 Visit us: Your neighbourhood bakery</p>
+                        <p class="mt-4 text-sm opacity-60">Replace these sample contact details with your real business information.</p>
+                    </div>
+                </div>
+        </section>
+    </div>
+
+        <div id="detailsPage" class="hidden p-5">
+
+                <button type="button"
+                    class="text-amber-800 underline mb-6"
+                    onclick="showPage('homePage')">
+                    ← Back to Jobs
+                </button>
+
+                <div id="chefDetails" class="job-details hidden">
+                    <h1 class="text-3xl font-bold mb-4">Bakery Chef</h1>
+                    <p class="mb-4">
+                        Prepare and bake bread, cakes, pastries, and other bakery products.
+                        Maintain quality, cleanliness, and food safety standards.
+                    </p>
+                    <h2 class="text-xl font-semibold mb-2">Responsibilities</h2>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Prepare ingredients and bake bakery products.</li>
+                        <li>Maintain a clean and organized workspace.</li>
+                        <li>Follow recipes and food safety procedures.</li>
+                    </ul>
+                    <button type="button"
+                        class="bg-amber-700 text-white px-5 py-2 rounded-lg"
+                        onclick="openForm('Bakery Chef')">
+                        Apply for this Job
+                    </button>
+                </div>
+
+                <div id="baristaDetails" class="job-details hidden">
+                    <h1 class="text-3xl font-bold mb-4">Barista</h1>
+                    <p class="mb-4">
+                        Prepare coffee, tea, and other beverages while creating a welcoming
+                        experience for every customer.
+                    </p>
+                    <h2 class="text-xl font-semibold mb-2">Responsibilities</h2>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Prepare drinks according to recipes.</li>
+                        <li>Serve customers in a friendly manner.</li>
+                        <li>Keep the beverage station clean and stocked.</li>
+                    </ul>
+                    <button type="button"
+                        class="bg-amber-700 text-white px-5 py-2 rounded-lg"
+                        onclick="openForm('Barista')">
+                        Apply for this Job
+                    </button>
+                </div>
+
+                <div id="salesDetails" class="job-details hidden">
+                    <h1 class="text-3xl font-bold mb-4">Sales Assistant</h1>
+                    <p class="mb-4">
+                        Assist customers with purchases, display bakery products,
+                        and help keep the store running smoothly.
+                    </p>
+                    <h2 class="text-xl font-semibold mb-2">Responsibilities</h2>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Greet customers and answer questions.</li>
+                        <li>Display products and maintain store presentation.</li>
+                        <li>Assist with sales and checkout tasks.</li>
+                    </ul>
+                    <button type="button"
+                        class="bg-amber-700 text-white px-5 py-2 rounded-lg"
+                        onclick="openForm('Sales Assistant')">
+                        Apply for this Job
+                    </button>
+                </div>
+
+            </div>
+
+            
+            <!-- Application Form Section -->
+            <section id="resForm"
+                class="hidden bg-stone-100 px-4 py-12 sm:px-6 lg:px-8">
+
+                <div class="mx-auto max-w-3xl">
+
+                    <!-- Form Heading -->
+                    <div class="mb-8 text-center">
+                        <span class="mb-3 inline-block rounded-full bg-rose-100 px-4 py-1.5
+                                    text-sm font-semibold text-rose-800">
+                            🥐 JOIN OUR TEAM
+                        </span>
+
+                        <h2 class="text-3xl font-bold tracking-tight text-rose-900 sm:text-4xl">
+                            Job Application
+                        </h2>
+
+                        <p class="mt-3 text-base text-stone-600">
+                            Tell us a little about yourself. We'd love to meet you!
+                        </p>
+                    </div>
+
+                    <!-- Form Card -->
+                    <form id="registration-form"
+                        class="space-y-8 rounded-2xl border border-stone-200 bg-white
+                            p-5 shadow-xl shadow-stone-900/5 sm:p-8 lg:p-10"
+                        novalidate>
+
+                        <input type="hidden" id="selected-job" name="job">
+
+                        <!-- Section: Account Details -->
+                        <div>
+                            <h3 class="mb-1 text-xl font-bold text-stone-800">
+                                Account Details
+                            </h3>
+                            <p class="mb-5 text-sm text-stone-500">
+                                Create your application account.
+                            </p>
+
+                            <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+
+                                <div>
+                                    <label for="username"
+                                        class="mb-2 block text-sm font-semibold text-stone-700">
+                                        Username <span class="text-rose-700">*</span>
+                                    </label>
+                                    <input type="text" id="username" name="username"
+                                        autocomplete="username" minlength="5" maxlength="12"
+                                        required
+                                        placeholder="Choose a username"
+                                        class="w-full rounded-xl border border-stone-300 bg-stone-50
+                                            px-4 py-3 text-stone-800 outline-none transition
+                                            placeholder:text-stone-400
+                                            focus:border-rose-700 focus:bg-white
+                                            focus:ring-4 focus:ring-rose-700/10">
+                                    <p class="mt-1 text-sm text-rose-700" id="username-error"></p>
+                                </div>
+
+                                <div>
+                                    <label for="password"
+                                        class="mb-2 block text-sm font-semibold text-stone-700">
+                                        Password <span class="text-rose-700">*</span>
+                                    </label>
+                                    <input type="password" id="password" name="password"
+                                        autocomplete="new-password" minlength="6" maxlength="16"
+                                        required
+                                        placeholder="Create a password"
+                                        class="w-full rounded-xl border border-stone-300 bg-stone-50
+                                            px-4 py-3 text-stone-800 outline-none transition
+                                            placeholder:text-stone-400
+                                            focus:border-rose-700 focus:bg-white
+                                            focus:ring-4 focus:ring-rose-700/10">
+                                    <p class="mt-1 text-sm text-rose-700" id="password-error"></p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="h-px bg-stone-200"></div>
+
+                        <!-- Section: Personal Information -->
+                        <div>
+                            <h3 class="mb-1 text-xl font-bold text-stone-800">
+                                Personal Information
+                            </h3>
+                            <p class="mb-5 text-sm text-stone-500">
+                                Please provide your contact details.
+                            </p>
+
+                            <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+
+                                <div>
+                                    <label for="first-name"
+                                        class="mb-2 block text-sm font-semibold text-stone-700">
+                                        First Name <span class="text-rose-700">*</span>
+                                    </label>
+                                    <input type="text" id="first-name" name="firstName"
+                                        autocomplete="given-name" pattern="[A-Za-z]+" required
+                                        placeholder="Your first name"
+                                        class="w-full rounded-xl border border-stone-300 bg-stone-50
+                                            px-4 py-3 text-stone-800 outline-none transition
+                                            placeholder:text-stone-400
+                                            focus:border-rose-700 focus:bg-white
+                                            focus:ring-4 focus:ring-rose-700/10">
+                                    <p class="mt-1 text-sm text-rose-700" id="first-name-error"></p>
+                                </div>
+
+                                <div>
+                                    <label for="last-name"
+                                        class="mb-2 block text-sm font-semibold text-stone-700">
+                                        Last Name <span class="text-rose-700">*</span>
+                                    </label>
+                                    <input type="text" id="last-name" name="lastName"
+                                        autocomplete="family-name" pattern="[A-Za-z]+" required
+                                        placeholder="Your last name"
+                                        class="w-full rounded-xl border border-stone-300 bg-stone-50
+                                            px-4 py-3 text-stone-800 outline-none transition
+                                            placeholder:text-stone-400
+                                            focus:border-rose-700 focus:bg-white
+                                            focus:ring-4 focus:ring-rose-700/10">
+                                    <p class="mt-1 text-sm text-rose-700" id="last-name-error"></p>
+                                </div>
+
+                                <div class="sm:col-span-2">
+                                    <label for="email"
+                                        class="mb-2 block text-sm font-semibold text-stone-700">
+                                        Email Address <span class="text-rose-700">*</span>
+                                    </label>
+                                    <input type="email" id="email" name="email"
+                                        autocomplete="email" required
+                                        placeholder="you@example.com"
+                                        class="w-full rounded-xl border border-stone-300 bg-stone-50
+                                            px-4 py-3 text-stone-800 outline-none transition
+                                            placeholder:text-stone-400
+                                            focus:border-rose-700 focus:bg-white
+                                            focus:ring-4 focus:ring-rose-700/10">
+                                    <p class="mt-1 text-sm text-rose-700" id="email-error"></p>
+                                </div>
+
+                                <div class="sm:col-span-2">
+                                    <label for="address"
+                                        class="mb-2 block text-sm font-semibold text-stone-700">
+                                        Address <span class="font-normal text-stone-400">(Optional)</span>
+                                    </label>
+                                    <input type="text" id="address" name="address"
+                                        autocomplete="street-address"
+                                        placeholder="Street address"
+                                        class="w-full rounded-xl border border-stone-300 bg-stone-50
+                                            px-4 py-3 text-stone-800 outline-none transition
+                                            placeholder:text-stone-400
+                                            focus:border-rose-700 focus:bg-white
+                                            focus:ring-4 focus:ring-rose-700/10">
+                                    <p class="mt-1 text-sm text-rose-700" id="address-error"></p>
+                                </div>
+
+                                <div>
+                                    <label for="country"
+                                        class="mb-2 block text-sm font-semibold text-stone-700">
+                                        Country <span class="text-rose-700">*</span>
+                                    </label>
+                                    <select id="country" name="country" required
+                                        class="w-full rounded-xl border border-stone-300 bg-stone-50
+                                            px-4 py-3 text-stone-800 outline-none transition
+                                            focus:border-rose-700 focus:bg-white
+                                            focus:ring-4 focus:ring-rose-700/10">
+                                        <option value="">Choose a country</option>
+                                        <option value="TH">Thailand</option>
+                                        <option value="AU">Australia</option>
+                                        <option value="CA">Canada</option>
+                                        <option value="US">USA</option>
+                                    </select>
+                                    <p class="mt-1 text-sm text-rose-700" id="country-error"></p>
+                                </div>
+
+                                <div>
+                                    <label for="zip"
+                                        class="mb-2 block text-sm font-semibold text-stone-700">
+                                        ZIP Code <span class="text-rose-700">*</span>
+                                    </label>
+                                    <input type="text" id="zip" name="zip"
+                                        inputmode="numeric" pattern="[0-9]{5}" maxlength="5"
+                                        required placeholder="12345"
+                                        class="w-full rounded-xl border border-stone-300 bg-stone-50
+                                            px-4 py-3 text-stone-800 outline-none transition
+                                            placeholder:text-stone-400
+                                            focus:border-rose-700 focus:bg-white
+                                            focus:ring-4 focus:ring-rose-700/10">
+                                    <p class="mt-1 text-sm text-rose-700" id="zip-error"></p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="h-px bg-stone-200"></div>
+
+                        <!-- Section: Preferences -->
+                        <div>
+                            <h3 class="mb-5 text-xl font-bold text-stone-800">
+                                A Little More About You
+                            </h3>
+
+                            <fieldset class="mb-6">
+                                <legend class="mb-3 text-sm font-semibold text-stone-700">
+                                    Preferred Language <span class="text-rose-700">*</span>
+                                </legend>
+                                <div class="flex flex-wrap gap-3">
+                                    <label class="flex cursor-pointer items-center gap-2 rounded-xl
+                                                border border-stone-200 px-4 py-3 transition
+                                                hover:border-rose-400 hover:bg-rose-50">
+                                        <input type="checkbox" name="language" value="en" required
+                                            class="checkbox checkbox-primary">
+                                        <span class="text-sm text-stone-700">English</span>
+                                    </label>
+
+                                    <label class="flex cursor-pointer items-center gap-2 rounded-xl
+                                                border border-stone-200 px-4 py-3 transition
+                                                hover:border-rose-400 hover:bg-rose-50">
+                                        <input type="checkbox" name="language" value="th"
+                                            class="checkbox checkbox-primary">
+                                        <span class="text-sm text-stone-700">Thai</span>
+                                    </label>
+                                </div>
+                                <p class="mt-1 text-sm text-rose-700" id="language-error"></p>
+                            </fieldset>
+
+                            <fieldset class="mb-6">
+                                <legend class="mb-3 text-sm font-semibold text-stone-700">
+                                    Gender <span class="text-rose-700">*</span>
+                                </legend>
+                                <div class="flex flex-wrap gap-3">
+                                    <label class="flex cursor-pointer items-center gap-2 rounded-xl
+                                                border border-stone-200 px-4 py-3 transition
+                                                hover:border-rose-400 hover:bg-rose-50">
+                                        <input type="radio" name="gender" value="male" required
+                                            class="radio radio-primary">
+                                        <span class="text-sm text-stone-700">Male</span>
+                                    </label>
+
+                                    <label class="flex cursor-pointer items-center gap-2 rounded-xl
+                                                border border-stone-200 px-4 py-3 transition
+                                                hover:border-rose-400 hover:bg-rose-50">
+                                        <input type="radio" name="gender" value="female"
+                                            class="radio radio-primary">
+                                        <span class="text-sm text-stone-700">Female</span>
+                                    </label>
+
+                                    <label class="flex cursor-pointer items-center gap-2 rounded-xl
+                                                border border-stone-200 px-4 py-3 transition
+                                                hover:border-rose-400 hover:bg-rose-50">
+                                        <input type="radio" name="gender" value="other"
+                                            class="radio radio-primary">
+                                        <span class="text-sm text-stone-700">Other</span>
+                                    </label>
+                                </div>
+                                <p class="mt-1 text-sm text-rose-700" id="gender-error"></p>
+                            </fieldset>
+
+                            <div>
+                                <label for="note"
+                                    class="mb-2 block text-sm font-semibold text-stone-700">
+                                    Note <span class="font-normal text-stone-400">(Optional)</span>
+                                </label>
+                                <textarea id="note" name="note" rows="4" maxlength="300"
+                                    placeholder="Tell us something about yourself..."
+                                    class="w-full resize-y rounded-xl border border-stone-300
+                                        bg-stone-50 px-4 py-3 text-stone-800 outline-none
+                                        transition placeholder:text-stone-400
+                                        focus:border-rose-700 focus:bg-white
+                                        focus:ring-4 focus:ring-rose-700/10"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Submit -->
+                        <div class="border-t border-stone-200 pt-6">
+                            <p class="mb-4 text-sm text-stone-500">
+                                <span class="text-rose-700">*</span> Required fields
+                            </p>
+
+                            <button type="submit"
+                                class="w-full rounded-xl bg-rose-800 px-6 py-4
+                                    text-base font-bold text-white shadow-lg
+                                    shadow-rose-900/20 transition duration-200
+                                    hover:-translate-y-0.5 hover:bg-rose-900
+                                    hover:shadow-xl focus:outline-none
+                                    focus:ring-4 focus:ring-rose-800/30
+                                    sm:w-auto sm:min-w-56">
+                                Submit Application →
+                            </button>
+
+                            <p class="mt-4 text-sm text-stone-600"
+                                id="form-status" role="status" aria-live="polite"></p>
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+
+    </main>
+    <script>
+        function showPage(pageId) {
+            document.getElementById("homePage").classList.add("hidden");
+            document.getElementById("detailsPage").classList.add("hidden");
+            document.getElementById("resForm").classList.add("hidden");
+
+            document.getElementById(pageId).classList.remove("hidden");
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+
+        function openJob(job) {
+            document.querySelectorAll("#detailsPage .job-details").forEach(function(detail) {
+                detail.classList.add("hidden");
+            });
+
+            document.getElementById(job + "Details").classList.remove("hidden");
+            showPage("detailsPage");
+        }
+
+        function openForm(jobName) {
+            document.getElementById("selected-job").value = jobName;
+            showPage("resForm");
+        }
+    </script>
+    <script src="script.js"></script>
+
+    <footer class="footer footer-center bg-base-100 p-8 text-base-content">
+        <div>
+            <a href="#home" class="text-2xl font-bold text-primary">🥐 Farmhome Bakery</a>
+            <p>Freshly baked with love, every day.</p>
+            <p class="text-sm opacity-60">© 2026 Farmhome Bakery. All rights reserved.</p>
         </div>
-    </section>
-
-    <section class="p-10 bg-base-200">
-        <div class="text-center mb-8">
-            <h2 class="card-title">Why you should work with us?</h2>
-            <p></p>
-        </div>
-    </section>
-    <section class="p-10 bg-base-200">
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="card bg-base-100 shadow-xl hover:scale-105 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(34,197,94,0.7)] transition-all duration-300 ease-in-out cursor-pointer">
-                <figure>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv497gkk7_I2TcrBw_tdlFIfPIRW45qfE2fXjMZYNEKcabAG9dWjgcyGQF&s=10"
-                        alt="Profile" class="h-60 w-full object-cover">
-                </figure>
-
-                <div class="card-body">
-                    <h2 class="card-title">PROFILE</h2>
-                    <p>Learn about my fat cat and me</p>
-
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Open</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card bg-base-100 shadow-xl hover:scale-105 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(34,197,94,0.7)] transition-all duration-300 ease-in-out cursor-pointer">
-                <figure>
-                    <img src="https://media.tenor.com/cf6b_tqxIMsAAAAe/cat-drooling.png"
-                        alt="Skills" class="h-60 w-full object-cover">
-                </figure>
-
-                <div class="card-body">
-                    <h2 class="card-title">SKILLS</h2>
-                    <p>Programming Skills</p>
-
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-secondary">Open</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card bg-base-100 shadow-xl hover:scale-105 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(34,197,94,0.7)] transition-all duration-300 ease-in-out cursor-pointer">
-                <figure>
-                    <img src="https://i.pinimg.com/736x/4c/2b/83/4c2b830ceab547cc813823204ca63bc8.jpg"
-                        alt="Projects" class="h-60 w-full object-cover">
-                </figure>
-
-                <div class="card-body">
-                    <h2 class="card-title">PROJECTS</h2>
-                    <p>My Projects (Nothing)</p>
-
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-accent">Open</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card bg-base-100 shadow-xl hover:scale-105 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(34,197,94,0.7)] transition-all duration-300 ease-in-out cursor-pointer">
-                <figure>
-                    <img src="https://media.tenor.com/MmSvfoqiQEYAAAAM/bbg-leon-leon-kennedy.gif"
-                        alt="Games" class="h-60 w-full object-cover">
-                </figure>
-
-                <div class="card-body">
-                    <h2 class="card-title">GAMES</h2>
-                    <p>Favorite Games</p>
-
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-info">Open</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card bg-base-100 shadow-xl hover:scale-105 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(34,197,94,0.7)] transition-all duration-300 ease-in-out cursor-pointer">
-                <figure>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Gwpa8P1DY1pnJ7VuseBVWLx7lU4XPkZIAZZYBR67Q7MwkrBU4S3Ha6s&s=10"
-                        alt="Foods" class="h-60 w-full object-cover">
-                </figure>
-
-                <div class="card-body">
-                    <h2 class="card-title">FOODS</h2>
-                    <p>Dinner ideas</p>
-
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-success">Open</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card bg-base-100 shadow-xl hover:scale-105 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(34,197,94,0.7)] transition-all duration-300 ease-in-out cursor-pointer">
-                <figure>
-                    <img src="https://i.chzbgr.com/full/10451377152/h2B7CD155"
-                        alt="Achievements" class="h-60 w-full object-cover">
-                </figure>
-
-                <div class="card-body">
-                    <h2 class="card-title">ACHIEVEMENTS</h2>
-                    <p>My Awards</p>
-
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-warning">Open</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card bg-base-100 shadow-xl hover:scale-105 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(34,197,94,0.7)] transition-all duration-300 ease-in-out cursor-pointer">
-                <figure>
-                    <img src="https://i.pinimg.com/736x/b6/3e/2b/b63e2b94b3f4362cff28d3624a488ea9.jpg"
-                        alt="Gallery" class="h-60 w-full object-cover">
-                </figure>
-
-                <div class="card-body">
-                    <h2 class="card-title">GALLERY</h2>
-                    <p>Photo Collection</p>
-
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-error">Open</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card bg-base-100 shadow-xl hover:scale-105 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(34,197,94,0.7)] transition-all duration-300 ease-in-out cursor-pointer">
-                <figure>
-                    <img src="https://media.tenor.com/YgUjlCy1FyYAAAAM/cat-phone-ai-yelling-office-worker-webcam-angry.gif"
-                        alt="Contact" class="h-60 w-full object-cover">
-                </figure>
-
-                <div class="card-body">
-                    <h2 class="card-title">CONTACT</h2>
-                    <p>Call me maybe ❤️</p>
-
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Open</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="about" class="p-10 bg-base-200">
-
-        <div class="text-center mb-8">
-            <h2 class="text-4xl font-bold">อะbout มี</h2>
-            <p>here's my introduction.</p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-6">
-
-            <div class="card bg-base-100 shadow-xl">
-                <div class="card-body">
-                    <h3 class="card-title">Why do I love cat?</h3>
-                    <p>Because they're so cute and will take control of the world.</p>
-                </div>
-            </div>
-
-            <div class="card bg-base-100 shadow-xl">
-                <div class="card-body">
-                    <h3 class="card-title">My career dream?</h3>
-                    <p>Anything that I can make enough money and have time with 10 cats everydays.</p>
-                </div>
-            </div>
-
-            <div class="card bg-base-100 shadow-xl">
-                <div class="card-body">
-                    <h3 class="card-title">Why did I pick Computer Science?</h3>
-                    <p>Coding is actually fun when you can understand it.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="gallery" class="py-12 bg-base-100">
-
-        <div class="text-center mb-8">
-            <h2 class="text-4xl font-bold">CAT GALLERY</h2>
-            <p>My favorite cat collection</p>
-        </div>
-
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6">
-
-            <div class="card bg-base-100 shadow-xl hover:scale-110 hover:-translate-y-3 hover:shadow-[0_0_50px_rgba(34,197,94,1)] transition-all duration-300 ease-in-out cursor-pointer">
-                <figure>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK6V9fv8DW-llUcO5eHRTOvqcd04giDzSDVEj7zlNyyMGM4vxIVUjuUOQM&s=10" class="h-56 w-full object-cover">
-                </figure>
-            </div>
-
-            <div class="card bg-base-100 shadow-xl hover:scale-110 hover:-translate-y-3 hover:shadow-[0_0_50px_rgba(34,197,94,1)] transition-all duration-300 ease-in-out cursor-pointer">
-                <figure>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZd4fxUkt62YDoE_e_8dFqmIVaK9HOPgcrW37GYnq6NfggFNp6n5xygNJ_&s=10" class="h-56 w-full object-cover">
-                </figure>
-            </div>
-
-            <div class="card bg-base-100 shadow-xl hover:scale-110 hover:-translate-y-3 hover:shadow-[0_0_50px_rgba(34,197,94,1)] transition-all duration-300 ease-in-out cursor-pointer">
-                <figure>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb47fiG3e9lr2krfR5snz08UYDd1DOLK6xmTHkY1tIkMvamhN7OYMjfT4&s=10" class="h-56 w-full object-cover">
-                </figure>
-            </div>
-
-            <div class="card bg-base-100 shadow-xl hover:scale-110 hover:-translate-y-3 hover:shadow-[0_0_50px_rgba(34,197,94,1)] transition-all duration-300 ease-in-out cursor-pointer">
-                <figure>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTarwbrCQmEN9evgS8LUGG2dJDYDPwyrR_xu1wd_ClaLLoH_BJtZFudYwTI&s=10" class="h-56 w-full object-cover">
-                </figure>
-            </div>
-
-            <div class="card bg-base-100 shadow-xl hover:scale-110 hover:-translate-y-3 hover:shadow-[0_0_50px_rgba(34,197,94,1)] transition-all duration-300 ease-in-out cursor-pointer">
-                <figure>
-                    <img src="https://media.tenor.com/LYD5aVtydvoAAAAe/cat.png" class="h-56 w-full object-cover">
-                </figure>
-            </div>
-
-            <div class="card bg-base-100 shadow-xl hover:scale-110 hover:-translate-y-3 hover:shadow-[0_0_50px_rgba(34,197,94,1)] transition-all duration-300 ease-in-out cursor-pointer">
-                <figure>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDcJcPvGxmebjmBqtPhUmMs8E05S_6Hcur40qkPLfEDqv4u_ZU4ebaGVM&s=10" class="h-56 w-full object-cover">
-                </figure>
-            </div>
-
-            <div class="card bg-base-100 shadow-xl hover:scale-110 hover:-translate-y-3 hover:shadow-[0_0_50px_rgba(34,197,94,1)] transition-all duration-300 ease-in-out cursor-pointer">
-                <figure>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtNxXaINCyoKkSTdLu_OSwYID7mGtCmqhKyuZsvxcxFvO4GqeqgG_pkCQT&s=10" class="h-56 w-full object-cover">
-                </figure>
-            </div>
-
-            <div class="card bg-base-100 shadow-xl hover:scale-110 hover:-translate-y-3 hover:shadow-[0_0_50px_rgba(34,197,94,1)] transition-all duration-300 ease-in-out cursor-pointer">
-                <figure>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd_k36Z2V4nk9owT_4Kp-_41QQfFtbA2U3qUHCzc2uWCekLhRXdOhshsc&s=10" class="h-56 w-full object-cover">
-                </figure>
-            </div>
-
-        </div>
-
-    </section>
-    <footer class="footer footer-center p-10 bg-primary text-primary-content">
-
-        <aside>
-            <h2 class="text-2xl font-bold">Rahatnaksuksa</h2>
-            <p>1680706437</p>
-        </aside>
-
     </footer>
 </body>
-<div class="p-10 bg-base-200">
-    <button class="btn btn-primary">Test</button>
-    <button class="btn btn-secondary">Test</button>
-    <button class="btn btn-accent">Test</button>
-</div>
-
 </html>
